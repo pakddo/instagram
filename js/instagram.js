@@ -5,7 +5,7 @@ $(function(){
 	function loadInstagrams(max_id) {
 
 		var userid = 1463008;
-		var baseurl = "http://pakddo.herokuapp.com/feed/" + userid;
+		var baseurl = "https://pakddo.herokuapp.com/feed/" + userid;
 		var url = typeof max_id != 'undefined' ? baseurl + "?max_id=" + max_id : baseurl;
 
 		$.getJSON(url,
