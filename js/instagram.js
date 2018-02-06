@@ -23,7 +23,7 @@ $(function(){
 						createPhotoElement(res.data[i])
 				  );
 			    }
-				// $('.loader').fadeOut(300);
+				$('.loader').fadeOut(300);
 				$(chunk).fadeIn(500, function() {
 					if ($(chunk).position().top > 100) {
 						$('html,body').animate({ scrollTop: $(chunk).offset().top }, 500, 'easeInOutSine');
